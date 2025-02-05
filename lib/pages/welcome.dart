@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_medhub/pages/login.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -165,9 +166,14 @@ class WelcomeScreen extends StatelessWidget {
               ],
             ),
           ),
-          ),
-          TextButton(
-          onPressed: () {},
+        ),
+        TextButton(
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => LoginPage()),
+            );
+          },
           child: const Text(
             "LOGIN",
             style: TextStyle(
