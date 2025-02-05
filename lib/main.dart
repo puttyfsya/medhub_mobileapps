@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'My Flutter App',
-      initialRoute: '/login',
+      initialRoute: '/',
       routes: {
         '/': (context) => const Splashscreen(),
         '/onboarding': (context) => const OnboardingScreen(),

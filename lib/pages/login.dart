@@ -86,7 +86,7 @@ class CustomTextField extends StatelessWidget {
     return TextField(
       obscureText: isPassword,
       decoration: InputDecoration(
-        prefixIcon: Icon(icon, color: Colors.blueGrey), // Ikon di sebelah kiri
+        prefixIcon: Icon(icon, color: Colors.blueGrey), 
         hintText: hintText,
         border: const UnderlineInputBorder(
           borderSide: BorderSide(color: Colors.blueGrey),
@@ -102,7 +102,7 @@ class CustomTextField extends StatelessWidget {
   }
 }
 
-// Custom Password Field with "Forgot?"
+
 class CustomPasswordField extends StatelessWidget {
   const CustomPasswordField({super.key});
 
@@ -128,10 +128,10 @@ class CustomPasswordField extends StatelessWidget {
         ),
         Positioned(
           right: 0,
-          bottom: 12, // Menyesuaikan posisi agar sejajar dengan teks input
+          bottom: 12, 
           child: TextButton(
             onPressed: () {
-              // Aksi ketika "Forgot?" diklik
+             
             },
             child: const Text(
               "Forgot?",
